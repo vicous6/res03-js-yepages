@@ -1,0 +1,52 @@
+@import "reset";
+
+/* VARS */
+@import "vars";
+
+
+html {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  
+  &> main {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    & > section:nth-of-type(1){
+      height:40vh;
+     
+        & > form{ 
+          
+          border:1px solid black;
+         padding:3rem;
+          display:grid;
+      grid-template-rows:1fr 1fr;
+            & > fieldset{
+              height:7vh;
+              & >label{}
+              & > input{}
+              
+            }
+          }
+          
+   
+  }
+         
+    &> section:nth-of-type(2){
+       height:40vh;
+          &> form{
+            height:40vh;
+             border:1px solid black;
+         padding:3rem;
+          display:grid;
+            &> fieldset{
+              &>label{}
+              &> input{}
+              
+            }
+          }
+    }
+}
+}
