@@ -9,6 +9,9 @@ let form1 = document.getElementById("form1")
 let form2 = document.getElementById("form2")
 
  let truc = new UserManager()
+truc.load()
+// console.log(truc)
+
 
     form1.addEventListener('submit', (event) => {
          event.preventDefault()
@@ -50,13 +53,16 @@ let form2 = document.getElementById("form2")
     
     
    let userrrr = new Users(id, username,email,password1,firstName,secondName,profil)
-  console.log(userrrr)
+  // console.log(userrrr)
   
       truc.createUser(userrrr)
       
+      truc.save()
    
-      console.log(truc)
+      // console.log(truc)
     });
+    
+    
 
   // let booksTab=[];
   // let usersTab=[];

@@ -53,35 +53,37 @@ table {
 }
 
 /* VARS */
-html {
+#body0 {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
 }
-
-body > main {
+#body0 > main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-body > main > section:nth-of-type(1) {
+#body0 > main > section:nth-of-type(1) {
   height: 40vh;
 }
-body > main > section:nth-of-type(1) > form {
+#body0 > main > section:nth-of-type(1) > form {
   border: 1px solid black;
   padding: 3rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-body > main > section:nth-of-type(1) > form > fieldset {
+#body0 > main > section:nth-of-type(1) > form > fieldset {
   height: 7vh;
 }
-body > main > section:nth-of-type(2) {
+#body0 > main > section:nth-of-type(2) {
   height: 40vh;
 }
-body > main > section:nth-of-type(2) > form {
+#body0 > main > section:nth-of-type(2) > form {
   height: 40vh;
   border: 1px solid black;
   padding: 3rem;
   display: grid;
+}
+#table {
+  width: 48vw;
 }
 
 /*# sourceMappingURL=style.css.map */

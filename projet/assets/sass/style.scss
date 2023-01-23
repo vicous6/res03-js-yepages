@@ -5,13 +5,13 @@
 
 
 html {
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+
 }
 
-body{
-  
-  &> main {
+#body0{
+    font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  & > main {
     display:grid;
     grid-template-columns:1fr 1fr;
     & > section:nth-of-type(1){
@@ -49,4 +49,11 @@ body{
           }
     }
 }
+}
+
+
+// admin-index
+
+#table{
+  width: 48vw;
 }
