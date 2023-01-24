@@ -52,11 +52,16 @@ createUser(user) {
 }
 
     deleteUser(userId){
-        for(let i = 0; i< this.#users.length; i++) {
-            if(this.#users[i].id === userId) {
-                this.#users.remove(users[i]);
+        let removeTab = [];
+        for(let i = 0; i< this.users.length; i++) {
+            if(this.users[i].id !== userId) {
+                removeTab.push(this.users[i])
             }
-    }}
+        }
+
+        this.users = removeTab;
+    
+    }
 
     editUser(id, username,email,firstName,secondName,profil){
         

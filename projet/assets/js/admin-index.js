@@ -10,5 +10,18 @@ truc.load()
 console.log(truc)
         
         truc.displayStorage()
+        
+        
+        let supr= document.getElementById("supr")
+        let content = document.getElementById("supContent")
+        supr.addEventListener('click',function(){
+            
+            
+            console.log(parseInt(content.value))
+             truc.deleteUser(parseInt(content.value))
+             truc.save()
+             console.log(truc)
+              document.location.href="admin-users.html"; 
+        })
       
   })
