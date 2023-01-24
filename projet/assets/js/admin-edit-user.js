@@ -82,10 +82,12 @@ truc.load()
  
   // console.log(userrrr)
   
-      truc.editUser(id, username,email,firstName,secondName,profil)
-       console.log(truc)
-      truc.save()
+      truc.editUser(id, username,email,firstName,secondName,profil);
+       console.log(truc);
+      truc.save();
    
+    //   window.location.reload();
+      document.location.href="admin-users.html"; 
       
     });
     

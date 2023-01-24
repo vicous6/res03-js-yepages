@@ -19,35 +19,37 @@ class UserManager {
         this.#users = users;
     }
 
-createUser(user){
-       let state = 0
-   let password2= document.getElementById("passIns2").value
-   
-   
-        for(let i = 0  ; i < this.users.length; i ++){
-            
-            if(user.email===this.users[i].email){
-                alert ("nom de compte deja utilisé")
-                state = 1
-            }
+createUser(user) {
+    let state = 0
+    let password2 = document.getElementById("passIns2").value
+
+
+    for (let i = 0; i < this.users.length; i++) {
+
+        if (user.email === this.users[i].email) {
+            alert("nom de compte deja utilisé")
+            state = 1
         }
-        if( user.password !== password2){
-           state = 1
-        }
-        
-        
-        if(user.username === "" || user.password === ""|| user.email === ""|| user.password === ""|| user.firstName === ""|| user.secondName === ""|| user.profileImage === ""){
-            console.log("un des champs est vide")
-            
-        }else
-        if(state === 0){
-             this.#users.push(user)
-                 console.log(user)
-        }else{
-            alert ("ca va pas quelque part")
-        }
-        
     }
+    if (user.password !== password2) {
+        state = 1
+    }
+
+
+    if (user.username === "" || user.password === "" || user.email === "" || user.password === "" || user.firstName === "" || user.secondName === "" || user.profileImage === "") {
+        console.log("un des champs est vide")
+
+    }
+    else
+    if (state === 0) {
+        this.#users.push(user)
+        console.log(user)
+    }
+    else {
+        alert("ca va pas quelque part")
+    }
+
+}
 
     deleteUser(userId){
         for(let i = 0; i< this.#users.length; i++) {
