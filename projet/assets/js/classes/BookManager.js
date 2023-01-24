@@ -112,7 +112,7 @@ class BookManager {
         
         let  parseBooks = JSON.parse(sessionStorage.getItem("books"));
         let bookTab= []
-       
+        console.log(parseBooks)
         for(let i = 0 ; i < parseBooks.length; i++) {
             
            let bookData = (JSON.parse(parseBooks[i]))

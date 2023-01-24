@@ -56,8 +56,15 @@ createUser(user){
             }
     }}
 
-    editUser(user){
-       
+    editUser(id, username,email,firstName,secondName,profil){
+        
+        
+      this.users[id].username=username
+      this.users[id].email=email
+      this.users[id].firstName=firstName
+      this.users[id].lastName=secondName
+      this.users[id].profileImage=profil
+   
     }
 
     save(){
@@ -75,6 +82,12 @@ createUser(user){
         this.#users.push(newUser);
     }
         }
+        
+        
+        
+    }
+    
+    displayStorage(){
         
         
         for(let i = 0; i < this.#users.length; i++) {
@@ -101,9 +114,7 @@ createUser(user){
 
         adminTable.appendChild(tr);
         }
-        
     }
-    
     
     login(username, password){
         let state =0

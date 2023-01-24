@@ -8,6 +8,7 @@
  let truc = new UserManager()
 truc.load()
 console.log(truc)
-
+        
+        truc.displayStorage()
       
   })
